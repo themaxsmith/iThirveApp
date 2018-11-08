@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import UIKit
+
+class GoalViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBAction func SpiritButton(_ sender: Any) {
+        
+    }
+    
+}
+

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D0AB8218A46FD00C0A197 /* LoginViewController.swift */; };
 		28A0B0752194DF4F00C55875 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0B0742194DF4F00C55875 /* GoalViewController.swift */; };
+		28A0B0772194E2BC00C55875 /* SetGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */; };
 		28C3B336218A3BC400081C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B335218A3BC400081C16 /* AppDelegate.swift */; };
 		28C3B338218A3BC400081C16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B337218A3BC400081C16 /* ViewController.swift */; };
 		28C3B33B218A3BC400081C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B339218A3BC400081C16 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		280D0AB8218A46FD00C0A197 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		28A0B0742194DF4F00C55875 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalViewController.swift; sourceTree = "<group>"; };
 		28C3B332218A3BC400081C16 /* iThirveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThirveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C3B335218A3BC400081C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C3B337218A3BC400081C16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				28C3B341218A3BC600081C16 /* Info.plist */,
 				280D0AB8218A46FD00C0A197 /* LoginViewController.swift */,
 				28A0B0742194DF4F00C55875 /* GoalViewController.swift */,
+				28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */,
 			);
 			path = iThirveApp;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A0B0772194E2BC00C55875 /* SetGoalViewController.swift in Sources */,
 				280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */,
 				28A0B0752194DF4F00C55875 /* GoalViewController.swift in Sources */,
 				28C3B338218A3BC400081C16 /* ViewController.swift in Sources */,
