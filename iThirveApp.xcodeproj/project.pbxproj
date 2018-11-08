@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D0AB8218A46FD00C0A197 /* LoginViewController.swift */; };
 		28C3B336218A3BC400081C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B335218A3BC400081C16 /* AppDelegate.swift */; };
 		28C3B338218A3BC400081C16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B337218A3BC400081C16 /* ViewController.swift */; };
 		28C3B33B218A3BC400081C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B339218A3BC400081C16 /* Main.storyboard */; };
 		28C3B33D218A3BC600081C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B33C218A3BC600081C16 /* Assets.xcassets */; };
 		28C3B340218A3BC600081C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B33E218A3BC600081C16 /* LaunchScreen.storyboard */; };
 		28C3B34B218A3BC600081C16 /* iThirveAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B34A218A3BC600081C16 /* iThirveAppTests.swift */; };
+		3663BD2654EA81F6F4D56CC6 /* Pods_iThirveAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E2E2587C5789EF9E255F12 /* Pods_iThirveAppTests.framework */; };
+		7951BE994467CFDC90EB82F7 /* Pods_iThirveApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7982E76077CB3E8196A57D4 /* Pods_iThirveApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280D0AB8218A46FD00C0A197 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		28C3B332218A3BC400081C16 /* iThirveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThirveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C3B335218A3BC400081C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C3B337218A3BC400081C16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,12 @@
 		28C3B346218A3BC600081C16 /* iThirveAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iThirveAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C3B34A218A3BC600081C16 /* iThirveAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iThirveAppTests.swift; sourceTree = "<group>"; };
 		28C3B34C218A3BC600081C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F79D3D1FCE15E18773C9F2F /* Pods-iThirveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp.debug.xcconfig"; sourceTree = "<group>"; };
+		60F8380F3FB400BCB6468434 /* Pods-iThirveAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveAppTests/Pods-iThirveAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B33BA4A3237B7CE642B2C16E /* Pods-iThirveAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveAppTests/Pods-iThirveAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7982E76077CB3E8196A57D4 /* Pods_iThirveApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iThirveApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2362B4682B5054DF9662211 /* Pods-iThirveApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp.release.xcconfig"; sourceTree = "<group>"; };
+		F6E2E2587C5789EF9E255F12 /* Pods_iThirveAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iThirveAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7951BE994467CFDC90EB82F7 /* Pods_iThirveApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3663BD2654EA81F6F4D56CC6 /* Pods_iThirveAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +74,8 @@
 				28C3B334218A3BC400081C16 /* iThirveApp */,
 				28C3B349218A3BC600081C16 /* iThirveAppTests */,
 				28C3B333218A3BC400081C16 /* Products */,
+				CD3C789B57FED27232E8030C /* Pods */,
+				DEC6F6B12C83F8923FC8270D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +97,7 @@
 				28C3B33C218A3BC600081C16 /* Assets.xcassets */,
 				28C3B33E218A3BC600081C16 /* LaunchScreen.storyboard */,
 				28C3B341218A3BC600081C16 /* Info.plist */,
+				280D0AB8218A46FD00C0A197 /* LoginViewController.swift */,
 			);
 			path = iThirveApp;
 			sourceTree = "<group>";
@@ -96,6 +111,26 @@
 			path = iThirveAppTests;
 			sourceTree = "<group>";
 		};
+		CD3C789B57FED27232E8030C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F79D3D1FCE15E18773C9F2F /* Pods-iThirveApp.debug.xcconfig */,
+				E2362B4682B5054DF9662211 /* Pods-iThirveApp.release.xcconfig */,
+				60F8380F3FB400BCB6468434 /* Pods-iThirveAppTests.debug.xcconfig */,
+				B33BA4A3237B7CE642B2C16E /* Pods-iThirveAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEC6F6B12C83F8923FC8270D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7982E76077CB3E8196A57D4 /* Pods_iThirveApp.framework */,
+				F6E2E2587C5789EF9E255F12 /* Pods_iThirveAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28C3B34F218A3BC600081C16 /* Build configuration list for PBXNativeTarget "iThirveApp" */;
 			buildPhases = (
+				2C6534FD79D01077292D9B40 /* [CP] Check Pods Manifest.lock */,
 				28C3B32E218A3BC400081C16 /* Sources */,
 				28C3B32F218A3BC400081C16 /* Frameworks */,
 				28C3B330218A3BC400081C16 /* Resources */,
+				8E49149F39E91094C05F799B /* [CP] Embed Pods Frameworks */,
+				4C18DE4DDFE5ECA2B0F94EB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28C3B352218A3BC600081C16 /* Build configuration list for PBXNativeTarget "iThirveAppTests" */;
 			buildPhases = (
+				F4D2777E85DECFE503C05486 /* [CP] Check Pods Manifest.lock */,
 				28C3B342218A3BC600081C16 /* Sources */,
 				28C3B343218A3BC600081C16 /* Frameworks */,
 				28C3B344218A3BC600081C16 /* Resources */,
@@ -192,11 +231,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C6534FD79D01077292D9B40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iThirveApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C18DE4DDFE5ECA2B0F94EB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E49149F39E91094C05F799B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D2777E85DECFE503C05486 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iThirveAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28C3B32E218A3BC400081C16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */,
 				28C3B338218A3BC400081C16 /* ViewController.swift in Sources */,
 				28C3B336218A3BC400081C16 /* AppDelegate.swift in Sources */,
 			);
@@ -291,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,6 +507,7 @@
 		};
 		28C3B350218A3BC600081C16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F79D3D1FCE15E18773C9F2F /* Pods-iThirveApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +526,7 @@
 		};
 		28C3B351218A3BC600081C16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2362B4682B5054DF9662211 /* Pods-iThirveApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +545,7 @@
 		};
 		28C3B353218A3BC600081C16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F8380F3FB400BCB6468434 /* Pods-iThirveAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +567,7 @@
 		};
 		28C3B354218A3BC600081C16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33BA4A3237B7CE642B2C16E /* Pods-iThirveAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
