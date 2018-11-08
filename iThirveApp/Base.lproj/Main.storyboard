@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wm4-Yz-0AJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wm4-Yz-0AJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -211,51 +211,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgh-4k-6mm">
-                                <rect key="frame" x="12" y="195" width="48" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Physical_IMG"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIg-ov-fFR">
-                                <rect key="frame" x="12" y="277" width="48" height="49"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCf-f2-7TQ">
+                                <rect key="frame" x="79" y="134" width="216" height="335"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxo-qz-0hU">
+                                        <rect key="frame" x="5" y="5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="AXd-gU-KAf"/>
+                                            <constraint firstAttribute="width" constant="100" id="ITg-VT-DIk"/>
+                                        </constraints>
+                                        <state key="normal" image="Spiritual_IMG"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgh-4k-6mm">
+                                        <rect key="frame" x="110" y="5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Qo6-rV-1lB"/>
+                                            <constraint firstAttribute="width" constant="100" id="WZ0-Ka-5Yh"/>
+                                        </constraints>
+                                        <state key="normal" image="Physical_IMG"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIg-ov-fFR">
+                                        <rect key="frame" x="5" y="110" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="BOR-Ry-X32"/>
+                                            <constraint firstAttribute="width" constant="100" id="hsX-RD-Eh9"/>
+                                        </constraints>
+                                        <state key="normal" image="emotional_IMG"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1z-81-A41">
+                                        <rect key="frame" x="110" y="110" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="1tS-v9-ZHR"/>
+                                            <constraint firstAttribute="height" constant="100" id="CcW-uy-nFg"/>
+                                        </constraints>
+                                        <state key="normal" image="professional_IMG"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDg-33-NVI">
+                                        <rect key="frame" x="5" y="215" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="keA-ye-e54"/>
+                                            <constraint firstAttribute="height" constant="100" id="yAC-Cw-9an"/>
+                                        </constraints>
+                                        <state key="normal" image="relationship_IMG1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPI-wT-5mH">
+                                        <rect key="frame" x="110" y="215" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Nj3-t2-8b8"/>
+                                            <constraint firstAttribute="height" constant="100" id="n9n-aA-6ba"/>
+                                        </constraints>
+                                        <state key="normal" title="spiritual" image="Spiritual_IMG"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="F0t-QD-bUd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vgh-4k-6mm" secondAttribute="trailing" constant="5" id="2YD-hd-ptb"/>
+                                    <constraint firstItem="N1z-81-A41" firstAttribute="top" secondItem="Vgh-4k-6mm" secondAttribute="bottom" constant="5" id="6Nb-cO-uMM"/>
+                                    <constraint firstItem="DDg-33-NVI" firstAttribute="top" secondItem="JIg-ov-fFR" secondAttribute="bottom" constant="5" id="6hF-ox-AQQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="DDg-33-NVI" secondAttribute="bottom" constant="5" id="7gc-iJ-4RX"/>
+                                    <constraint firstItem="DPI-wT-5mH" firstAttribute="top" secondItem="N1z-81-A41" secondAttribute="bottom" constant="5" id="Cvl-xs-cOA"/>
+                                    <constraint firstAttribute="trailing" secondItem="N1z-81-A41" secondAttribute="trailing" constant="5" id="EL9-b7-W5s"/>
+                                    <constraint firstItem="JIg-ov-fFR" firstAttribute="top" secondItem="Vxo-qz-0hU" secondAttribute="bottom" constant="5" id="NrO-Xm-3zp"/>
+                                    <constraint firstItem="N1z-81-A41" firstAttribute="leading" secondItem="JIg-ov-fFR" secondAttribute="trailing" constant="5" id="OVo-D8-Pfn"/>
+                                    <constraint firstItem="Vgh-4k-6mm" firstAttribute="top" secondItem="FCf-f2-7TQ" secondAttribute="top" constant="5" id="S6e-4i-EmO"/>
+                                    <constraint firstItem="DDg-33-NVI" firstAttribute="leading" secondItem="FCf-f2-7TQ" secondAttribute="leading" constant="5" id="SYs-KJ-ZnW"/>
+                                    <constraint firstItem="Vxo-qz-0hU" firstAttribute="top" secondItem="FCf-f2-7TQ" secondAttribute="top" constant="5" id="ZBi-tl-h1f"/>
+                                    <constraint firstAttribute="bottom" secondItem="DPI-wT-5mH" secondAttribute="bottom" constant="5" id="aQj-X2-wnU"/>
+                                    <constraint firstItem="JIg-ov-fFR" firstAttribute="leading" secondItem="FCf-f2-7TQ" secondAttribute="leading" constant="5" id="i7f-Xg-6ZW"/>
+                                    <constraint firstItem="Vgh-4k-6mm" firstAttribute="leading" secondItem="Vxo-qz-0hU" secondAttribute="trailing" constant="5" id="mTr-Ox-pmi"/>
+                                    <constraint firstItem="DPI-wT-5mH" firstAttribute="leading" secondItem="DDg-33-NVI" secondAttribute="trailing" constant="5" id="odD-wR-8qm"/>
+                                    <constraint firstItem="Vxo-qz-0hU" firstAttribute="leading" secondItem="FCf-f2-7TQ" secondAttribute="leading" constant="5" id="qon-Ah-kaz"/>
+                                    <constraint firstAttribute="trailing" secondItem="DPI-wT-5mH" secondAttribute="trailing" constant="5" id="uYS-7v-mLA"/>
                                 </constraints>
-                                <state key="normal" image="emotional_IMG"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1z-81-A41">
-                                <rect key="frame" x="12" y="360" width="48" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="x6S-9r-mA7"/>
-                                </constraints>
-                                <state key="normal" image="professional_IMG"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDg-33-NVI">
-                                <rect key="frame" x="12" y="451" width="48" height="48"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some text here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8P-aG-EL4">
+                                <rect key="frame" x="16" y="20" width="343" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="relationship_IMG1"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPI-wT-5mH">
-                                <rect key="frame" x="12" y="535" width="48" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="spiritual" image="Spiritual_IMG"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="PGc-do-WQ1">
-                                <rect key="frame" x="67" y="0.0" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxo-qz-0hU">
-                                <rect key="frame" x="12" y="126" width="48" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="500" id="0Wo-n1-jUn"/>
-                                    <constraint firstAttribute="width" secondItem="Vxo-qz-0hU" secondAttribute="height" multiplier="1:1" id="I2D-WP-liK"/>
-                                    <constraint firstAttribute="height" constant="500" id="N7Y-vY-rcT"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="bQb-id-8Tj"/>
-                                </constraints>
-                                <state key="normal" image="Spiritual_IMG"/>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.53246191297527845" green="0.18538029706494819" blue="0.56355092005076135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Gbv-N7-k1L"/>
                     </view>
                 </viewController>
@@ -306,7 +343,6 @@ Be deliberate with your time and resources
         <image name="Spiritual_IMG" width="960" height="960"/>
         <image name="emotional_IMG" width="960" height="960"/>
         <image name="google" width="500" height="512"/>
-        <image name="header" width="519" height="116"/>
         <image name="professional_IMG" width="960" height="960"/>
         <image name="relationship_IMG1" width="1300" height="1299"/>
     </resources>
