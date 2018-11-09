@@ -211,8 +211,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCf-f2-7TQ">
-                                <rect key="frame" x="79" y="134" width="216" height="335"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCf-f2-7TQ">
+                                <rect key="frame" x="80" y="141.5" width="215" height="320"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxo-qz-0hU">
                                         <rect key="frame" x="5" y="5" width="100" height="100"/>
@@ -225,14 +225,6 @@
                                             <action selector="SpiritButton:" destination="Fu2-BT-DfL" eventType="touchUpInside" id="XdM-pp-tSh"/>
                                             <segue destination="PXT-gd-Jhy" kind="show" id="Uku-mp-Iwd"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgh-4k-6mm">
-                                        <rect key="frame" x="110" y="5" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="Qo6-rV-1lB"/>
-                                            <constraint firstAttribute="width" constant="100" id="WZ0-Ka-5Yh"/>
-                                        </constraints>
-                                        <state key="normal" image="Physical_IMG"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIg-ov-fFR">
                                         <rect key="frame" x="5" y="110" width="100" height="100"/>
@@ -278,6 +270,17 @@
                                             <segue destination="PXT-gd-Jhy" kind="show" id="oH6-pn-2lt"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgh-4k-6mm">
+                                        <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Qo6-rV-1lB"/>
+                                            <constraint firstAttribute="width" constant="100" id="WZ0-Ka-5Yh"/>
+                                        </constraints>
+                                        <state key="normal" image="Physical_IMG"/>
+                                        <connections>
+                                            <segue destination="PXT-gd-Jhy" kind="show" id="iaX-JI-AGJ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -300,15 +303,20 @@
                                     <constraint firstAttribute="trailing" secondItem="DPI-wT-5mH" secondAttribute="trailing" constant="5" id="uYS-7v-mLA"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some text here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8P-aG-EL4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click on a button to enter that type of goal." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8P-aG-EL4">
                                 <rect key="frame" x="16" y="20" width="343" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.53246191297527845" green="0.18538029706494819" blue="0.56355092005076135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FCf-f2-7TQ" firstAttribute="centerY" secondItem="XLs-Ww-QNt" secondAttribute="centerY" id="2aA-eA-vXG"/>
+                            <constraint firstItem="FCf-f2-7TQ" firstAttribute="top" secondItem="M8P-aG-EL4" secondAttribute="bottom" constant="8" symbolic="YES" id="7Ga-4j-g83"/>
+                            <constraint firstItem="FCf-f2-7TQ" firstAttribute="centerX" secondItem="M8P-aG-EL4" secondAttribute="centerX" id="ZEX-F6-8U9"/>
+                            <constraint firstItem="FCf-f2-7TQ" firstAttribute="centerX" secondItem="XLs-Ww-QNt" secondAttribute="centerX" id="hVj-sy-l5V"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gbv-N7-k1L"/>
                     </view>
                 </viewController>
