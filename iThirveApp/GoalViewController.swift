@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class GoalViewController: UIViewController {
+    var types:[typesOfGoals] = [typesOfGoals(name: "Spirtual"),typesOfGoals(name: "Other")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,7 @@ class GoalViewController: UIViewController {
     }
     
     @IBAction func SpiritButton(_ sender: Any) {
-        
+        Global.global.selectedType = types[0]
     }
     
 }
