@@ -11,8 +11,13 @@ pod 'FacebookLogin'
 pod 'Alamofire'
 pod 'IQKeyboardManagerSwift'
 pod 'GoogleSignIn'
+pod 'DateTimePicker'
+pod 'Cosmos', '~> 17.0'
+pod 'SwiftyJSON'
+pod 'SwiftyOnboard'
   target 'iThirveAppTests' do
     inherit! :search_paths
+
     # Pods for testing
   end
 

@@ -23,6 +23,9 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate  {
         GIDSignIn.sharedInstance().signInSilently()
         
         // TODO(developer) Configure the sign-in button look/feel
+       
+            
+
         // ...
     }
     @IBOutlet weak var userText: UITextField!
@@ -40,14 +43,17 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate  {
                 if (JSON["status"] as! String) == "OK"{
                     let user = JSON["user"] as! NSDictionary
                     
-                  
-                    
+                    Global.global.appKey = user["appKey"] as! String
+                    Global.global.email = user["email"] as! String
+                    Global.global.data = user["data"] as! String
+                    Global.global.serverDate = user["date"] as! String
+                    Global.global.log = true
+                    print("test2 \(Global.global.appKey)")
                     DispatchQueue.main.async { [weak self] in
-                        if(self?.userText.text != "" || self?.passwordText.text != ""){
-                            self?.userText.resignFirstResponder()
-                            self?.passwordText.resignFirstResponder()
-                            self?.performSegue(withIdentifier: "goalsPage", sender: self)
-                        }
+                        UserDefaults.standard.set(user["appKey"] as! String, forKey: "appKey")
+                        Global.global.isLoggingIn = true
+                        self?.performSegue(withIdentifier: "goalsPage", sender: self)
+                        
                     }
                 }else{
                     //TODO ADD LOGIN ERROR FOR INCORECT

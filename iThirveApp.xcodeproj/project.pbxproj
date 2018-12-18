@@ -10,13 +10,19 @@
 		280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D0AB8218A46FD00C0A197 /* LoginViewController.swift */; };
 		28A0B0752194DF4F00C55875 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0B0742194DF4F00C55875 /* GoalViewController.swift */; };
 		28A0B0772194E2BC00C55875 /* SetGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */; };
+		28A0B0AB219A185300C55875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A0B0AA219A185300C55875 /* Main.storyboard */; };
 		28C3B336218A3BC400081C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B335218A3BC400081C16 /* AppDelegate.swift */; };
 		28C3B338218A3BC400081C16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B337218A3BC400081C16 /* ViewController.swift */; };
-		28C3B33B218A3BC400081C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B339218A3BC400081C16 /* Main.storyboard */; };
 		28C3B33D218A3BC600081C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B33C218A3BC600081C16 /* Assets.xcassets */; };
 		28C3B340218A3BC600081C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B33E218A3BC600081C16 /* LaunchScreen.storyboard */; };
 		28C3B34B218A3BC600081C16 /* iThirveAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B34A218A3BC600081C16 /* iThirveAppTests.swift */; };
+		28E33B5821B07FDB00DF657C /* NewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E33B5721B07FDB00DF657C /* NewGoalViewController.swift */; };
+		28E33B5A21B1DEAE00DF657C /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E33B5921B1DEAE00DF657C /* CreateAccountViewController.swift */; };
+		28E33B5E21C05AD200DF657C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E33B5D21C05AD200DF657C /* SettingsViewController.swift */; };
+		28E421AE219F6A3200CEE613 /* EndOfCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E421AD219F6A3200CEE613 /* EndOfCycleViewController.swift */; };
 		3663BD2654EA81F6F4D56CC6 /* Pods_iThirveAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E2E2587C5789EF9E255F12 /* Pods_iThirveAppTests.framework */; };
+		73D8BAED219627C2002C4C9B /* typesOfGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8BAEC219627C2002C4C9B /* typesOfGoals.swift */; };
+		73D8BAEF219628B7002C4C9B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8BAEE219628B7002C4C9B /* Global.swift */; };
 		7951BE994467CFDC90EB82F7 /* Pods_iThirveApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7982E76077CB3E8196A57D4 /* Pods_iThirveApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,18 +40,24 @@
 		280D0AB8218A46FD00C0A197 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		28A0B0742194DF4F00C55875 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalViewController.swift; sourceTree = "<group>"; };
+		28A0B0AA219A185300C55875 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		28C3B332218A3BC400081C16 /* iThirveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThirveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C3B335218A3BC400081C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C3B337218A3BC400081C16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28C3B33A218A3BC400081C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28C3B33C218A3BC600081C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28C3B33F218A3BC600081C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28C3B341218A3BC600081C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28C3B346218A3BC600081C16 /* iThirveAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iThirveAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C3B34A218A3BC600081C16 /* iThirveAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iThirveAppTests.swift; sourceTree = "<group>"; };
 		28C3B34C218A3BC600081C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E33B5721B07FDB00DF657C /* NewGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalViewController.swift; sourceTree = "<group>"; };
+		28E33B5921B1DEAE00DF657C /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		28E33B5D21C05AD200DF657C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		28E421AD219F6A3200CEE613 /* EndOfCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfCycleViewController.swift; sourceTree = "<group>"; };
 		5F79D3D1FCE15E18773C9F2F /* Pods-iThirveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp.debug.xcconfig"; sourceTree = "<group>"; };
 		60F8380F3FB400BCB6468434 /* Pods-iThirveAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveAppTests/Pods-iThirveAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73D8BAEC219627C2002C4C9B /* typesOfGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typesOfGoals.swift; sourceTree = "<group>"; };
+		73D8BAEE219628B7002C4C9B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		B33BA4A3237B7CE642B2C16E /* Pods-iThirveAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveAppTests/Pods-iThirveAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		D7982E76077CB3E8196A57D4 /* Pods_iThirveApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iThirveApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2362B4682B5054DF9662211 /* Pods-iThirveApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,13 +109,19 @@
 			children = (
 				28C3B335218A3BC400081C16 /* AppDelegate.swift */,
 				28C3B337218A3BC400081C16 /* ViewController.swift */,
-				28C3B339218A3BC400081C16 /* Main.storyboard */,
+				28A0B0AA219A185300C55875 /* Main.storyboard */,
+				73D8BAEC219627C2002C4C9B /* typesOfGoals.swift */,
 				28C3B33C218A3BC600081C16 /* Assets.xcassets */,
 				28C3B33E218A3BC600081C16 /* LaunchScreen.storyboard */,
 				28C3B341218A3BC600081C16 /* Info.plist */,
 				280D0AB8218A46FD00C0A197 /* LoginViewController.swift */,
 				28A0B0742194DF4F00C55875 /* GoalViewController.swift */,
 				28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */,
+				73D8BAEE219628B7002C4C9B /* Global.swift */,
+				28E421AD219F6A3200CEE613 /* EndOfCycleViewController.swift */,
+				28E33B5721B07FDB00DF657C /* NewGoalViewController.swift */,
+				28E33B5921B1DEAE00DF657C /* CreateAccountViewController.swift */,
+				28E33B5D21C05AD200DF657C /* SettingsViewController.swift */,
 			);
 			path = iThirveApp;
 			sourceTree = "<group>";
@@ -224,7 +242,7 @@
 			files = (
 				28C3B340218A3BC600081C16 /* LaunchScreen.storyboard in Resources */,
 				28C3B33D218A3BC600081C16 /* Assets.xcassets in Resources */,
-				28C3B33B218A3BC400081C16 /* Main.storyboard in Resources */,
+				28A0B0AB219A185300C55875 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +311,17 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTimePicker/DateTimePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyOnboard/SwiftyOnboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -308,14 +329,17 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTimePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyOnboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -351,11 +375,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E33B5A21B1DEAE00DF657C /* CreateAccountViewController.swift in Sources */,
 				28A0B0772194E2BC00C55875 /* SetGoalViewController.swift in Sources */,
+				28E33B5E21C05AD200DF657C /* SettingsViewController.swift in Sources */,
 				280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */,
 				28A0B0752194DF4F00C55875 /* GoalViewController.swift in Sources */,
+				73D8BAED219627C2002C4C9B /* typesOfGoals.swift in Sources */,
+				28E421AE219F6A3200CEE613 /* EndOfCycleViewController.swift in Sources */,
 				28C3B338218A3BC400081C16 /* ViewController.swift in Sources */,
+				28E33B5821B07FDB00DF657C /* NewGoalViewController.swift in Sources */,
 				28C3B336218A3BC400081C16 /* AppDelegate.swift in Sources */,
+				73D8BAEF219628B7002C4C9B /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,14 +408,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		28C3B339218A3BC400081C16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28C3B33A218A3BC400081C16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28C3B33E218A3BC600081C16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -503,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

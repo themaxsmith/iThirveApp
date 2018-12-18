@@ -12,7 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       // Do  any additional setup after loading the view, typically from a nib.
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        print("test")
+        let prefs:UserDefaults = UserDefaults.standard
+        if let g = UserDefaults.standard.string(forKey: "appKey"){
+            Global.global.appKey = g
+            print("test")
+            performSegue(withIdentifier: "home", sender: self)
+            
+        }
+        
+
     }
 
 

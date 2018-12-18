@@ -10,6 +10,8 @@ import UIKit
 import FBSDKCoreKit
 import IQKeyboardManagerSwift
 import GoogleSignIn
+import UserNotifications
+import Cosmos
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
    
@@ -73,6 +75,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
     }
     
 
-
+    class func sharedInstance() -> AppDelegate{
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 }
 
