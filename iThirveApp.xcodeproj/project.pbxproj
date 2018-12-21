@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D0AB8218A46FD00C0A197 /* LoginViewController.swift */; };
+		285BA35B21C994E8003325D6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA35A21C994E8003325D6 /* GradientView.swift */; };
+		285BA35D21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA35C21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift */; };
+		285BA35F21CC42E3003325D6 /* HowToAssessGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA35E21CC42E3003325D6 /* HowToAssessGoalsViewController.swift */; };
+		285BA36121CC4374003325D6 /* TotalStarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA36021CC4374003325D6 /* TotalStarViewController.swift */; };
+		285BA36321CD86CE003325D6 /* GroupStarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA36221CD86CE003325D6 /* GroupStarViewController.swift */; };
 		28A0B0752194DF4F00C55875 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0B0742194DF4F00C55875 /* GoalViewController.swift */; };
 		28A0B0772194E2BC00C55875 /* SetGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */; };
 		28A0B0AB219A185300C55875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A0B0AA219A185300C55875 /* Main.storyboard */; };
@@ -38,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		280D0AB8218A46FD00C0A197 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		285BA35A21C994E8003325D6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		285BA35C21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsForGoalMakingViewController.swift; sourceTree = "<group>"; };
+		285BA35E21CC42E3003325D6 /* HowToAssessGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToAssessGoalsViewController.swift; sourceTree = "<group>"; };
+		285BA36021CC4374003325D6 /* TotalStarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStarViewController.swift; sourceTree = "<group>"; };
+		285BA36221CD86CE003325D6 /* GroupStarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStarViewController.swift; sourceTree = "<group>"; };
 		28A0B0742194DF4F00C55875 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalViewController.swift; sourceTree = "<group>"; };
 		28A0B0AA219A185300C55875 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +132,11 @@
 				28E33B5721B07FDB00DF657C /* NewGoalViewController.swift */,
 				28E33B5921B1DEAE00DF657C /* CreateAccountViewController.swift */,
 				28E33B5D21C05AD200DF657C /* SettingsViewController.swift */,
+				285BA35A21C994E8003325D6 /* GradientView.swift */,
+				285BA35C21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift */,
+				285BA35E21CC42E3003325D6 /* HowToAssessGoalsViewController.swift */,
+				285BA36021CC4374003325D6 /* TotalStarViewController.swift */,
+				285BA36221CD86CE003325D6 /* GroupStarViewController.swift */,
 			);
 			path = iThirveApp;
 			sourceTree = "<group>";
@@ -377,15 +392,20 @@
 			files = (
 				28E33B5A21B1DEAE00DF657C /* CreateAccountViewController.swift in Sources */,
 				28A0B0772194E2BC00C55875 /* SetGoalViewController.swift in Sources */,
+				285BA35B21C994E8003325D6 /* GradientView.swift in Sources */,
 				28E33B5E21C05AD200DF657C /* SettingsViewController.swift in Sources */,
 				280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */,
 				28A0B0752194DF4F00C55875 /* GoalViewController.swift in Sources */,
 				73D8BAED219627C2002C4C9B /* typesOfGoals.swift in Sources */,
 				28E421AE219F6A3200CEE613 /* EndOfCycleViewController.swift in Sources */,
 				28C3B338218A3BC400081C16 /* ViewController.swift in Sources */,
+				285BA35F21CC42E3003325D6 /* HowToAssessGoalsViewController.swift in Sources */,
 				28E33B5821B07FDB00DF657C /* NewGoalViewController.swift in Sources */,
 				28C3B336218A3BC400081C16 /* AppDelegate.swift in Sources */,
+				285BA35D21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift in Sources */,
 				73D8BAEF219628B7002C4C9B /* Global.swift in Sources */,
+				285BA36321CD86CE003325D6 /* GroupStarViewController.swift in Sources */,
+				285BA36121CC4374003325D6 /* TotalStarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

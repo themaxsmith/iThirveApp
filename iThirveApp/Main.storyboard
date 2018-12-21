@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.60822314023971558" green="0.18872472643852234" blue="0.47460150718688965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.60822314023971558" green="0.18872472643852234" blue="0.47460150718688965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -83,7 +83,7 @@
                                 <rect key="frame" x="16" y="21" width="343" height="256"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.58395880460739136" green="0.19996559619903564" blue="0.57973015308380127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Soq-1J-POs" firstAttribute="trailing" secondItem="6fL-xz-xRX" secondAttribute="trailing" id="0mN-jG-sII"/>
                             <constraint firstItem="Soq-1J-POs" firstAttribute="leading" secondItem="6fL-xz-xRX" secondAttribute="leading" id="1J0-9m-ZGH"/>
@@ -184,7 +184,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.5838661789894104" green="0.19820010662078857" blue="0.57970249652862549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zbZ-sl-UjA" firstAttribute="leading" secondItem="GZ8-Bq-CEw" secondAttribute="trailing" constant="8" id="0dv-Ao-i3T"/>
                             <constraint firstItem="GZ8-Bq-CEw" firstAttribute="leading" secondItem="NqG-d8-sJL" secondAttribute="trailing" constant="8" id="7IW-hz-Rju"/>
@@ -239,7 +239,7 @@
                                             <constraint firstAttribute="height" constant="100" id="G1d-Ja-Vxh"/>
                                             <constraint firstAttribute="width" constant="100" id="gr1-to-DMI"/>
                                         </constraints>
-                                        <state key="normal" image="Spiritual_IMG"/>
+                                        <state key="normal" image="Spiritual"/>
                                         <connections>
                                             <action selector="SpiritButton:" destination="xwc-1Q-tVb" eventType="touchUpInside" id="5jz-Qg-W5R"/>
                                         </connections>
@@ -250,7 +250,7 @@
                                             <constraint firstAttribute="width" constant="100" id="A7V-iY-FNU"/>
                                             <constraint firstAttribute="height" constant="100" id="m0p-wN-6K9"/>
                                         </constraints>
-                                        <state key="normal" image="emotional_IMG"/>
+                                        <state key="normal" image="emotional"/>
                                         <connections>
                                             <action selector="emotionalButton:" destination="xwc-1Q-tVb" eventType="touchUpInside" id="QdO-8G-UKt"/>
                                         </connections>
@@ -261,7 +261,7 @@
                                             <constraint firstAttribute="height" constant="100" id="O5u-QH-b6D"/>
                                             <constraint firstAttribute="width" constant="100" id="Vhz-m6-JZ6"/>
                                         </constraints>
-                                        <state key="normal" image="professional_IMG"/>
+                                        <state key="normal" image="professional"/>
                                         <connections>
                                             <action selector="professionalButton:" destination="xwc-1Q-tVb" eventType="touchUpInside" id="VH4-gz-aNO"/>
                                         </connections>
@@ -272,7 +272,7 @@
                                             <constraint firstAttribute="width" constant="100" id="e46-kI-4uu"/>
                                             <constraint firstAttribute="height" constant="100" id="psC-q8-DIm"/>
                                         </constraints>
-                                        <state key="normal" image="relationship_IMG1"/>
+                                        <state key="normal" image="Relational.pdf"/>
                                         <connections>
                                             <action selector="relationshipButton:" destination="xwc-1Q-tVb" eventType="touchUpInside" id="4gT-Db-OUO"/>
                                         </connections>
@@ -283,7 +283,7 @@
                                             <constraint firstAttribute="height" constant="100" id="eWY-r8-bsl"/>
                                             <constraint firstAttribute="width" constant="100" id="tPI-Fu-fky"/>
                                         </constraints>
-                                        <state key="normal" title="spiritual" image="Physical_IMG"/>
+                                        <state key="normal" title="spiritual" image="Physical"/>
                                         <connections>
                                             <action selector="physicalButton:" destination="xwc-1Q-tVb" eventType="touchUpInside" id="tIZ-pT-Gio"/>
                                         </connections>
@@ -294,7 +294,7 @@
                                             <constraint firstAttribute="width" constant="100" id="Y0H-7D-wkA"/>
                                             <constraint firstAttribute="height" constant="100" id="lK9-zA-V9i"/>
                                         </constraints>
-                                        <state key="normal" image="financial_IMG"/>
+                                        <state key="normal" image="financial"/>
                                         <connections>
                                             <action selector="financialButton:" destination="xwc-1Q-tVb" eventType="touchUpInside" id="ZpT-uX-taU"/>
                                         </connections>
@@ -322,7 +322,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the type of goal you want to track" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8P-aG-EL4">
-                                <rect key="frame" x="16" y="72" width="343" height="85.5"/>
+                                <rect key="frame" x="16" y="28" width="343" height="129.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -353,22 +353,64 @@
                                     <action selector="chooseDateBtnClicked:" destination="xwc-1Q-tVb" eventType="touchUpInside" id="4Ot-u8-yf7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubh-4c-CWD">
+                                <rect key="frame" x="16" y="523" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.60822314023971558" green="0.18872472643852234" blue="0.47460150718688965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Tips For Goal Making"/>
+                                <connections>
+                                    <action selector="TipsForGoalMakingButton:" destination="xwc-1Q-tVb" eventType="touchUpInside" id="SNI-Lv-YT4"/>
+                                    <segue destination="mYO-7N-Jrf" kind="push" identifier="toTIpsPage" id="xJo-bM-DuZ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.5838661789894104" green="0.19820010662078857" blue="0.57970249652862549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FCf-f2-7TQ" firstAttribute="centerX" secondItem="XLs-Ww-QNt" secondAttribute="centerX" id="7UY-4j-tVO"/>
+                            <constraint firstItem="q8l-jK-6DQ" firstAttribute="width" secondItem="Ubh-4c-CWD" secondAttribute="width" id="7rY-We-quQ"/>
                             <constraint firstItem="Idq-za-KNn" firstAttribute="top" secondItem="qxB-Ak-t6K" secondAttribute="bottom" constant="8" id="CkB-PI-AxR"/>
                             <constraint firstItem="FCf-f2-7TQ" firstAttribute="centerY" secondItem="XLs-Ww-QNt" secondAttribute="centerY" id="GYu-5M-4sq"/>
                             <constraint firstItem="q8l-jK-6DQ" firstAttribute="trailing" secondItem="XLs-Ww-QNt" secondAttribute="trailingMargin" id="OfW-T0-RGE"/>
+                            <constraint firstItem="Ubh-4c-CWD" firstAttribute="centerX" secondItem="XLs-Ww-QNt" secondAttribute="centerX" id="TMg-e1-bYN"/>
                             <constraint firstItem="FCf-f2-7TQ" firstAttribute="top" secondItem="M8P-aG-EL4" secondAttribute="bottom" constant="16" id="TPJ-TS-LMd"/>
                             <constraint firstItem="qxB-Ak-t6K" firstAttribute="leading" secondItem="XLs-Ww-QNt" secondAttribute="leadingMargin" id="TmF-BG-2xN"/>
+                            <constraint firstItem="q8l-jK-6DQ" firstAttribute="centerX" secondItem="XLs-Ww-QNt" secondAttribute="centerX" id="VQh-pi-ALa"/>
                             <constraint firstItem="M8P-aG-EL4" firstAttribute="top" secondItem="XLs-Ww-QNt" secondAttribute="topMargin" constant="8" id="YUZ-LX-2rI"/>
                             <constraint firstItem="M8P-aG-EL4" firstAttribute="trailing" secondItem="q8l-jK-6DQ" secondAttribute="trailing" id="ZI4-eQ-j9W"/>
+                            <constraint firstItem="q8l-jK-6DQ" firstAttribute="height" secondItem="Ubh-4c-CWD" secondAttribute="height" id="g5e-46-V9n"/>
                             <constraint firstItem="qxB-Ak-t6K" firstAttribute="trailing" secondItem="XLs-Ww-QNt" secondAttribute="trailingMargin" id="hFh-Mo-Hc0"/>
                             <constraint firstItem="q8l-jK-6DQ" firstAttribute="leading" secondItem="XLs-Ww-QNt" secondAttribute="leadingMargin" id="lhg-gV-aFt"/>
+                            <constraint firstItem="qxB-Ak-t6K" firstAttribute="top" secondItem="q8l-jK-6DQ" secondAttribute="bottom" constant="8" id="qat-yJ-Tnh"/>
                             <constraint firstItem="M8P-aG-EL4" firstAttribute="leading" secondItem="q8l-jK-6DQ" secondAttribute="leading" id="qcQ-rE-D0O"/>
+                            <constraint firstItem="q8l-jK-6DQ" firstAttribute="top" secondItem="Ubh-4c-CWD" secondAttribute="bottom" constant="8" id="uds-i7-lK9"/>
                             <constraint firstItem="qxB-Ak-t6K" firstAttribute="top" secondItem="q8l-jK-6DQ" secondAttribute="bottom" constant="8" id="xBk-l6-84O"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.58386617900000004" green="0.19820010660000001" blue="0.57970249650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="EyH-Kv-eLk">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="nTf-Vg-PfF">
@@ -381,9 +423,10 @@
                         <outlet property="StartGoalsBtn" destination="qxB-Ak-t6K" id="6aH-Bt-ntj"/>
                         <outlet property="chooseDate" destination="q8l-jK-6DQ" id="KIg-Cu-GRe"/>
                         <outlet property="textTitle" destination="M8P-aG-EL4" id="eMK-bg-SO0"/>
+                        <outlet property="tipGoalMaking" destination="Ubh-4c-CWD" id="HD5-qh-bJw"/>
                         <segue destination="PXT-gd-Jhy" kind="push" identifier="set" id="Q2U-2d-dBy"/>
                         <segue destination="Wm4-Yz-0AJ" kind="modal" identifier="123" id="lu3-a3-QtY"/>
-                        <segue destination="IL5-MG-pYM" kind="push" identifier="assess" id="hAk-lk-czg"/>
+                        <segue destination="wLj-2X-C5b" kind="push" identifier="assess" id="xgy-Zz-9Ny"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3sq-n5-FGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -405,7 +448,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vXG-xe-53B">
                                 <rect key="frame" x="16" y="0.0" width="343" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58395880460739136" green="0.19996559619903564" blue="0.57973015308380127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">
 ithrive31 is a Coaching and Personal Development Company is based on the fundamental principles of action planning, personal accountability, and whole person well-being.
 
@@ -419,7 +462,7 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.66622814119170992" green="0.12328025170010727" blue="0.51340470726508669" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="cfM-zC-zyt"/>
                 </viewController>
@@ -427,7 +470,7 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
             </objects>
             <point key="canvasLocation" x="98" y="27"/>
         </scene>
-        <!--Set Goal View Controller-->
+        <!--Title-->
         <scene sceneID="0dY-m4-GKS">
             <objects>
                 <viewController id="PXT-gd-Jhy" customClass="SetGoalViewController" customModule="iThirveApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -436,78 +479,56 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
                         <viewControllerLayoutGuide type="bottom" id="xPI-NB-kjD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ily-X9-Si9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxu-JR-ObB">
-                                <rect key="frame" x="16" y="131" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="wkb-kC-bNJ"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvL-ET-Szc">
-                                <rect key="frame" x="16" y="20" width="343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-47-eKt">
-                                <rect key="frame" x="16" y="169" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="uBu-z5-xgg"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="95" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7kX-nH-HQq">
-                                <rect key="frame" x="16" y="93" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="qXq-R9-cjM"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="57" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Enter up to 3 goals)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDe-ef-m6B">
-                                <rect key="frame" x="16" y="64" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="6g7-Mm-TTX"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="28" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-47-eKt">
+                                <rect key="frame" x="16" y="133" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.53246191300000001" green="0.18538029710000001" blue="0.56355092009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="KDe-ef-m6B" firstAttribute="leading" secondItem="7kX-nH-HQq" secondAttribute="leading" id="2Ff-L1-hCQ"/>
-                            <constraint firstItem="bxu-JR-ObB" firstAttribute="trailing" secondItem="lvh-47-eKt" secondAttribute="trailing" id="2pz-Az-oPe"/>
-                            <constraint firstItem="xvL-ET-Szc" firstAttribute="leading" secondItem="ily-X9-Si9" secondAttribute="leadingMargin" id="DWl-BD-ONw"/>
-                            <constraint firstItem="xvL-ET-Szc" firstAttribute="trailing" secondItem="ily-X9-Si9" secondAttribute="trailingMargin" id="I6P-Mx-PK2"/>
-                            <constraint firstItem="bxu-JR-ObB" firstAttribute="leading" secondItem="lvh-47-eKt" secondAttribute="leading" id="M1y-VO-TFZ"/>
-                            <constraint firstItem="7kX-nH-HQq" firstAttribute="trailing" secondItem="bxu-JR-ObB" secondAttribute="trailing" id="MGa-Hc-IOn"/>
-                            <constraint firstItem="xvL-ET-Szc" firstAttribute="trailing" secondItem="KDe-ef-m6B" secondAttribute="trailing" id="Q5Q-jH-CN3"/>
-                            <constraint firstItem="KDe-ef-m6B" firstAttribute="top" secondItem="xvL-ET-Szc" secondAttribute="bottom" constant="8" symbolic="YES" id="aTl-ss-p5J"/>
-                            <constraint firstItem="xPI-NB-kjD" firstAttribute="top" secondItem="lvh-47-eKt" secondAttribute="bottom" constant="404" id="adL-oc-xeb"/>
-                            <constraint firstItem="7kX-nH-HQq" firstAttribute="top" secondItem="KDe-ef-m6B" secondAttribute="bottom" constant="8" symbolic="YES" id="bXl-6b-BFf"/>
-                            <constraint firstItem="KDe-ef-m6B" firstAttribute="trailing" secondItem="7kX-nH-HQq" secondAttribute="trailing" id="cm5-Jl-Hs0"/>
-                            <constraint firstItem="xvL-ET-Szc" firstAttribute="top" secondItem="ily-X9-Si9" secondAttribute="top" constant="20" symbolic="YES" id="gUe-aq-4aB"/>
-                            <constraint firstItem="lvh-47-eKt" firstAttribute="top" secondItem="bxu-JR-ObB" secondAttribute="bottom" constant="8" symbolic="YES" id="gqB-Wk-dTr"/>
-                            <constraint firstItem="bxu-JR-ObB" firstAttribute="top" secondItem="7kX-nH-HQq" secondAttribute="bottom" constant="8" symbolic="YES" id="imu-H5-Got"/>
-                            <constraint firstItem="xvL-ET-Szc" firstAttribute="leading" secondItem="KDe-ef-m6B" secondAttribute="leading" id="kbH-pi-fzA"/>
-                            <constraint firstItem="7kX-nH-HQq" firstAttribute="leading" secondItem="bxu-JR-ObB" secondAttribute="leading" id="waY-ud-Blg"/>
+                            <constraint firstItem="7kX-nH-HQq" firstAttribute="trailing" secondItem="bxu-JR-ObB" secondAttribute="trailing" id="3AX-vc-klE"/>
+                            <constraint firstItem="7kX-nH-HQq" firstAttribute="leading" secondItem="bxu-JR-ObB" secondAttribute="leading" id="6Ca-0e-qk2"/>
+                            <constraint firstItem="lvh-47-eKt" firstAttribute="top" secondItem="bxu-JR-ObB" secondAttribute="bottom" constant="8" symbolic="YES" id="6tg-4A-pwU"/>
+                            <constraint firstItem="KDe-ef-m6B" firstAttribute="trailing" secondItem="ily-X9-Si9" secondAttribute="trailingMargin" id="92k-Oh-aMJ"/>
+                            <constraint firstItem="KDe-ef-m6B" firstAttribute="leading" secondItem="7kX-nH-HQq" secondAttribute="leading" id="DaP-WY-WOY"/>
+                            <constraint firstItem="KDe-ef-m6B" firstAttribute="top" secondItem="QSl-AH-H1r" secondAttribute="bottom" constant="8" symbolic="YES" id="F0g-gc-WPg"/>
+                            <constraint firstItem="KDe-ef-m6B" firstAttribute="trailing" secondItem="7kX-nH-HQq" secondAttribute="trailing" id="fRK-CI-hrl"/>
+                            <constraint firstItem="bxu-JR-ObB" firstAttribute="trailing" secondItem="lvh-47-eKt" secondAttribute="trailing" id="h7d-Fo-szj"/>
+                            <constraint firstItem="7kX-nH-HQq" firstAttribute="top" secondItem="KDe-ef-m6B" secondAttribute="bottom" constant="8" symbolic="YES" id="iMw-k4-Viz"/>
+                            <constraint firstItem="bxu-JR-ObB" firstAttribute="leading" secondItem="lvh-47-eKt" secondAttribute="leading" id="nCL-pY-zEA"/>
+                            <constraint firstItem="bxu-JR-ObB" firstAttribute="top" secondItem="7kX-nH-HQq" secondAttribute="bottom" constant="8" symbolic="YES" id="olK-iY-5G6"/>
+                            <constraint firstItem="KDe-ef-m6B" firstAttribute="leading" secondItem="ily-X9-Si9" secondAttribute="leadingMargin" id="yBh-mm-RvT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5o5-PC-cML"/>
+                    <navigationItem key="navigationItem" title="Title" id="q2V-ej-JDe"/>
                     <connections>
                         <outlet property="goal1Text" destination="7kX-nH-HQq" id="wWL-hv-lIt"/>
                         <outlet property="goal2Text" destination="bxu-JR-ObB" id="L30-kf-0ky"/>
                         <outlet property="goal3Text" destination="lvh-47-eKt" id="y9L-sv-aVk"/>
-                        <outlet property="typeOfGoalLabel" destination="xvL-ET-Szc" id="p5I-cO-Xu0"/>
+                        <outlet property="navHeader" destination="q2V-ej-JDe" id="NHJ-4h-JKw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NML-Ta-USA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -563,6 +584,151 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2W-CN-nnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1870" y="-751"/>
+        </scene>
+        <!--Tips For Goal Making View Controller-->
+        <scene sceneID="706-8E-iqC">
+            <objects>
+                <viewController id="mYO-7N-Jrf" customClass="TipsForGoalMakingViewController" customModule="iThirveApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B7F-aB-byz"/>
+                        <viewControllerLayoutGuide type="bottom" id="KSN-kZ-AYj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O6T-gi-Hdq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fy0-Md-BD5">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <mutableString key="text">Tips for goal setting
+1. Goals that you will enjoy completeing
+2. Keep each goal small
+3. Set them to make a postive impact
+4. Make assessable goals
+5. Put 1-3 goals in each life area
+
+Spiritual- Ex. spend five minutes dedicated to meditation each day
+Financial- Ex. Designate a specific amount of money to save over the next 31 days
+Emotional- Ex. Try to generate more self appreciation
+Professional- Ex. Complete a task at work a head of schedule
+Reltionship- Ex. Better a realtionship between you and a friend 
+Physical- Ex. Get one hour of exercise today</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fy0-Md-BD5" firstAttribute="leading" secondItem="O6T-gi-Hdq" secondAttribute="leadingMargin" id="91w-3f-A2q"/>
+                            <constraint firstItem="Fy0-Md-BD5" firstAttribute="trailing" secondItem="O6T-gi-Hdq" secondAttribute="trailingMargin" id="h5a-DI-p29"/>
+                            <constraint firstItem="Fy0-Md-BD5" firstAttribute="top" secondItem="B7F-aB-byz" secondAttribute="bottom" constant="8" symbolic="YES" id="lqV-0a-N7S"/>
+                            <constraint firstAttribute="bottom" secondItem="Fy0-Md-BD5" secondAttribute="bottom" constant="20" symbolic="YES" id="shy-SI-ZDT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uD4-3G-cza"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyR-dg-pJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="-1490.1049475262371"/>
+        </scene>
+        <!--How To Assess Goals View Controller-->
+        <scene sceneID="5pw-J0-dpo">
+            <objects>
+                <viewController id="wLj-2X-C5b" customClass="HowToAssessGoalsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zkM-Nk-50n"/>
+                        <viewControllerLayoutGuide type="bottom" id="he9-ey-sSp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cPb-p6-RfU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxT-za-4wM">
+                                <rect key="frame" x="16" y="605" width="343" height="42"/>
+                                <color key="backgroundColor" red="0.60822314020000001" green="0.18872472639999999" blue="0.47460150719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Ntx-BU-cvO"/>
+                                </constraints>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IL5-MG-pYM" kind="push" id="RFb-Oq-79y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJQ-D3-o2B">
+                                <rect key="frame" x="16" y="28" width="343" height="569"/>
+                                <string key="text">How to assess your goals
+At the end of the 31 days give yourself stars using the following scale:
+5 stars-Accomplished the goals
+4 stars- Made significant progress
+3 stars- Made some progress
+2 stars- Made little progress
+1 star- Attempted to make progress
+0 stars- DId not attempt to make progress</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IJQ-D3-o2B" firstAttribute="trailing" secondItem="FxT-za-4wM" secondAttribute="trailing" id="0Kc-HV-fOb"/>
+                            <constraint firstItem="IJQ-D3-o2B" firstAttribute="leading" secondItem="FxT-za-4wM" secondAttribute="leading" id="0i7-w2-JZi"/>
+                            <constraint firstItem="FxT-za-4wM" firstAttribute="top" secondItem="IJQ-D3-o2B" secondAttribute="bottom" constant="8" symbolic="YES" id="CHd-AK-btW"/>
+                            <constraint firstItem="FxT-za-4wM" firstAttribute="leading" secondItem="cPb-p6-RfU" secondAttribute="leadingMargin" id="DXH-F3-zYg"/>
+                            <constraint firstItem="IJQ-D3-o2B" firstAttribute="top" secondItem="zkM-Nk-50n" secondAttribute="bottom" constant="8" symbolic="YES" id="KVM-u2-7y3"/>
+                            <constraint firstAttribute="bottom" secondItem="FxT-za-4wM" secondAttribute="bottom" constant="20" symbolic="YES" id="N1M-Ro-J4p"/>
+                            <constraint firstItem="FxT-za-4wM" firstAttribute="trailing" secondItem="cPb-p6-RfU" secondAttribute="trailingMargin" id="m7m-uc-UhR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wu8-eL-ngD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeg-SD-GdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2685.5999999999999" y="-749.7751124437782"/>
+        </scene>
+        <!--Group Star View Controller-->
+        <scene sceneID="XDg-Tb-d5Z">
+            <objects>
+                <viewController id="1Ig-Y4-97O" customClass="GroupStarViewController" customModule="iThirveApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8S-Hi-i9z"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZwT-iN-CW1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ohe-Fd-9UH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYp-LG-ZF0">
+                                <rect key="frame" x="16" y="129" width="343" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UT5-nT-j1v">
+                                <rect key="frame" x="16" y="541" width="359" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60822314020000001" green="0.18872472639999999" blue="0.47460150719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Set new goals">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xwc-1Q-tVb" kind="push" id="Dbe-ce-9sD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zio-ul-Zom"/>
+                    <connections>
+                        <outlet property="groupStarLabel" destination="kYp-LG-ZF0" id="SZH-GR-kj4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teM-js-hAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3485.5999999999999" y="-750.67466266866575"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="8WJ-gb-7GM">
@@ -643,7 +809,7 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.5838661789894104" green="0.19820010662078857" blue="0.57970249652862549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cxQ-mc-KKh" firstAttribute="trailing" secondItem="QYP-U6-c7J" secondAttribute="trailing" id="1O8-zM-Nfs"/>
                             <constraint firstItem="hwN-Ru-ffC" firstAttribute="top" secondItem="QYP-U6-c7J" secondAttribute="bottom" constant="8" symbolic="YES" id="1pB-ZZ-4Uf"/>
@@ -762,15 +928,17 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
                         <viewControllerLayoutGuide type="bottom" id="LGB-bC-jn9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lAn-9W-KWP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bra-Kv-AbF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1056"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="1100"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsk-R0-uWh">
-                                <rect key="frame" x="16" y="532" width="343" height="51"/>
-                                <state key="normal" title="Finish Goal Assement"/>
+                                <rect key="frame" x="16" y="552" width="343" height="95"/>
+                                <state key="normal" title="Finish Goal Assement">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="GoalFinish:" destination="IL5-MG-pYM" eventType="touchUpInside" id="tqw-vp-KVU"/>
                                 </connections>
@@ -791,6 +959,7 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
                     <navigationItem key="navigationItem" id="seG-P6-HxC"/>
                     <connections>
                         <outlet property="scroll" destination="Bra-Kv-AbF" id="aiA-7S-rtm"/>
+                        <segue destination="1Ig-Y4-97O" kind="push" identifier="groupStar" id="aAG-Dc-oWQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cq-75-OMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -872,7 +1041,7 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.5838661789894104" green="0.19820010662078857" blue="0.57970249652862549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.20784313725490194" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BOq-gO-e9U" firstAttribute="trailing" secondItem="5ka-3A-ms8" secondAttribute="trailingMargin" id="0WT-cn-aRI"/>
                             <constraint firstItem="1DP-RJ-BdX" firstAttribute="trailing" secondItem="5ka-3A-ms8" secondAttribute="trailingMargin" id="0j2-6H-IxP"/>
@@ -917,16 +1086,17 @@ ithrive31 is a Coaching and Personal Development Company is based on the fundame
     <resources>
         <image name="256" width="256" height="256"/>
         <image name="Facebook_logo_(square)" width="600" height="600"/>
-        <image name="Physical_IMG" width="960" height="960"/>
-        <image name="Spiritual_IMG" width="960" height="960"/>
-        <image name="emotional_IMG" width="960" height="960"/>
-        <image name="financial_IMG" width="960" height="960"/>
+        <image name="Physical" width="353" height="353"/>
+        <image name="Relational.pdf" width="352" height="351"/>
+        <image name="Spiritual" width="352" height="351"/>
+        <image name="emotional" width="352" height="351"/>
+        <image name="financial" width="352" height="354"/>
         <image name="google" width="500" height="512"/>
-        <image name="professional_IMG" width="960" height="960"/>
-        <image name="relationship_IMG1" width="1300" height="1299"/>
+        <image name="professional" width="351" height="351"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="D9p-av-Ux0"/>
+        <segue reference="RFb-Oq-79y"/>
+        <segue reference="Dbe-ce-9sD"/>
         <segue reference="lu3-a3-QtY"/>
     </inferredMetricsTieBreakers>
 </document>

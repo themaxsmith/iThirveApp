@@ -22,6 +22,10 @@ class ViewController: UIViewController {
             Global.global.appKey = g
             print("test")
             performSegue(withIdentifier: "home", sender: self)
+           
+                
+               // self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
+            
             
         }
         

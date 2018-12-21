@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class SettingsViewConrtoller: ViewController {
+class SettingsViewConrtoller: UIViewController {
 
     @IBAction func logout(_ sender: Any) {
         print("f")
@@ -16,6 +16,9 @@ class SettingsViewConrtoller: ViewController {
         //UserDefaults.standard.removeObject(forKey: "dateG")
         
         //performSegue(withIdentifier: "123", sender: self)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+           self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
     }
  
     

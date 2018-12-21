@@ -14,22 +14,33 @@ import SwiftyJSON
 import Alamofire
 import SwiftyOnboard
 class GoalViewController: UIViewController, DateTimePickerDelegate {
+    
     func dateTimePicker(_ picker: DateTimePicker, didSelectDate: Date) {
         print(didSelectDate)
         Global.global.endDate = Calendar.current.date(byAdding: .day, value: 31, to: didSelectDate)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+        self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
     
+    }
+    @IBOutlet weak var tipGoalMaking: UIButton!
     
     func unlockGoals() {
         chooseDate.setTitle("Set Start Date", for: .normal)
         chooseDate.isHidden = false
+        tipGoalMaking.isHidden = false
         StartGoalsBtn.setTitle("Start Goals", for: .normal)
         textTitle.text = "Set your new goals to complete!"
         Global.global.canEdit = true
-        Global.global.types = [typesOfGoals(name: "Spirtual"),typesOfGoals(name: "Financial"),typesOfGoals(name: "Emotional"), typesOfGoals(name: "Professional"), typesOfGoals(name: "Relationship"), typesOfGoals(name: "Physical") ]
+        Global.global.types = [typesOfGoals(name: "Spirtual", #colorLiteral(red: 0.9458187222, green: 0.7334021926, blue: 0.3021544218, alpha: 1)),typesOfGoals(name: "Financial",#colorLiteral(red: 0.8009896874, green: 0.4788030982, blue: 0.7005690932, alpha: 1)),typesOfGoals(name: "Emotional", #colorLiteral(red: 0.5810223222, green: 0.7761070132, blue: 0.7162308693, alpha: 1)), typesOfGoals(name: "Professional",#colorLiteral(red: 0.9248451591, green: 0.4834753871, blue: 0.3483814597, alpha: 1)), typesOfGoals(name: "Relationship", #colorLiteral(red: 0.5137552023, green: 0.1924897432, blue: 0.3086739182, alpha: 1)), typesOfGoals(name: "Physical",#colorLiteral(red: 0.8689427972, green: 0.2297409177, blue: 0.4471674562, alpha: 1)) ]
     }
     
-   
+    @IBAction func TipsForGoalMakingButton(_ sender: Any) {
+       // performSegue(withIdentifier: "toTIpsPage", sender: self)
+    }
+    
    
     @IBOutlet weak var chooseDate: UIButton!
     @IBOutlet weak var textTitle: UILabel!
@@ -77,10 +88,17 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
             }
             setNot()
             chooseDate.isHidden = true
+            tipGoalMaking.isHidden = true
             StartGoalsBtn.setTitle("Finish Session Goals", for: .normal)
             Global.global.canEdit = false
             var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate!).day
-            textTitle.text =  "\(x!) Days to Go!"
+           
+            if (x! > 30){
+                 textTitle.text =  "\(x!-30) before goals start"
+            }else {
+                 textTitle.text =  "\(x!) Days to Go!"
+            }
+            
             sendToServer()
         }else{
             performSegue(withIdentifier: "assess", sender: self)
@@ -93,7 +111,7 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
         let picker = DateTimePicker.create(minimumDate: min, maximumDate: max)
         picker.frame = CGRect(x: 0, y: 100, width: picker.frame.size.width, height: picker.frame.size.height)
         picker.isDatePickerOnly = true
-        
+        picker.delegate = self
         picker.show()
     }
     struct goals : Decodable {
@@ -116,6 +134,7 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
         self.navigationController?.navigationBar.barTintColor = UIColor.clear
         self.navigationController?.navigationBar.backgroundColor = UIColor.clear
         self.view.layoutIfNeeded()
+       
         if ( Global.global.reset){
              Global.global.reset = false
             unlockGoals()
@@ -140,7 +159,6 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
         let alertController = UIAlertController(title: "Logout", message: "Are you sure logout?", preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "Logout", style: .default, handler: { _ in print("Foo")
             DispatchQueue.main.async {
-                self.present(alertController, animated: true, completion: nil)
             UserDefaults.standard.removeObject(forKey: "savedGoals")
             UserDefaults.standard.removeObject(forKey: "dateG")
             UserDefaults.standard.removeObject(forKey: "appKey")
@@ -228,10 +246,15 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
                             
                                 Global.global.endDate = date
                                 self!.chooseDate.isHidden = true
+                                self!.tipGoalMaking.isHidden = true
                                 self!.StartGoalsBtn.setTitle("Finish Session Goals", for: .normal)
                                 Global.global.canEdit = false
                                 var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate!).day
-                                self!.textTitle.text =  "\(x!) Days to Go!"
+                                if (x! > 30){
+                                    self!.textTitle.text =  "\(x!-30) before goals start"
+                                }else {
+                                    self!.textTitle.text =  "\(x!) Days to Go!"
+                                }
                             }
                         
                     
@@ -267,10 +290,15 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
                 }
                 Global.global.endDate = date
                 chooseDate.isHidden = true
+                tipGoalMaking.isHidden = true
                 StartGoalsBtn.setTitle("Finish Session Goals", for: .normal)
                 Global.global.canEdit = false
                     var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate!).day
-                textTitle.text =  "\(x!) Days to Go!"
+                if (x! > 30){
+                    textTitle.text =  "\(x!-30) before goals start"
+                }else {
+                    textTitle.text =  "\(x!) Days to Go!"
+                }
                 
               
         // Do any additional setup after loading the view, typically from a nib.
@@ -359,11 +387,11 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
     
     
    
-    let colors:[UIColor] = [#colorLiteral(red: 0.583866179, green: 0.1982001066, blue: 0.5797024965, alpha: 1),#colorLiteral(red: 0.583866179, green: 0.1982001066, blue: 0.5797024965, alpha: 1),#colorLiteral(red: 0.583866179, green: 0.1982001066, blue: 0.5797024965, alpha: 1)]
-    var titleArray: [String] = ["Welcome to iThrive! A Coaching & Personal Development Company","In this app you set 18 goals based on different aspects in your life.","31 days after you set your start date, you self assess your goals."]
-    var subTitleArray: [String] = ["Helping Individuals Thrive At Work & At Home"," Enter 3 goals for the 6 different categories.","When you have completed your self assessment, click Finish Goal Assessment to reset your goals and enter new goals."]
+    let colors:[UIColor] = [#colorLiteral(red: 0.4392156863, green: 0.2078431373, blue: 0.4117647059, alpha: 1),#colorLiteral(red: 0.4392156863, green: 0.2078431373, blue: 0.4117647059, alpha: 1),#colorLiteral(red: 0.4392156863, green: 0.2078431373, blue: 0.4117647059, alpha: 1),#colorLiteral(red: 0.4392156863, green: 0.2078431373, blue: 0.4117647059, alpha: 1)]
+    var titleArray: [String] = ["Welcome to iThrive! A Coaching & Personal Development Company","You will set goals in different areas of your life for 31 days.","31 days after you set your start date, you self assess your goals.","Why 31? "]
+    var subTitleArray: [String] = ["Helping Individuals Thrive At Work & At Home"," Enter up to 3 goals for the 6 different categories.","When you have completed your self assessment, click Finish Goal Assessment to reset your goals and enter new goals.", "31 days is a realistic timeframe to set practical and attainable goals. Set your course for a thriving life 31 days at a time!"]
     //array for images for the walkthrough
-    var images: [String] = ["256","GoalSettingPageSS","endOfCycleSS"]
+    var images: [String] = ["256","GoalSettingPageSS","endOfCycleSS","256"]
     var gradiant: CAGradientLayer = {
         //Gradiant for the background view
         let blue = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0).cgColor
@@ -387,14 +415,14 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
    }
      
     @objc func handleSkip() {
-        swiftyOnboard?.goToPage(index: 2, animated: true)
+        swiftyOnboard?.goToPage(index: 3, animated: true)
     }
     
     @objc func handleContinue(sender: UIButton) {
         let index = sender.tag
       //  swiftyOnboard?.goToPage(index: index + 1, animated: true)
         print("index: \(index)")
-        if index == 2 {
+        if index == 3 {
             //Replace the '2' with the amount of onboarding screens that you have - 1
             //Perform your segue
             
@@ -409,7 +437,7 @@ extension GoalViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
     
     func swiftyOnboardNumberOfPages(_ swiftyOnboard: SwiftyOnboard) -> Int {
         //Number of pages in the onboarding:
-        return 3
+        return 4
     }
     
     func swiftyOnboardBackgroundColorFor(_ swiftyOnboard: SwiftyOnboard, atIndex index: Int) -> UIColor? {

@@ -70,6 +70,9 @@ class CreateAcountViewController : UIViewController, GIDSignInUIDelegate  {
         GIDSignIn.sharedInstance()?.signIn()
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+           self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
+    }
     
     @IBAction func facebookButton(_ sender: Any) {
         let manager = LoginManager()

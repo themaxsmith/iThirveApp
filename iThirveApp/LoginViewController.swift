@@ -28,6 +28,8 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate  {
 
         // ...
     }
+   
+    
     @IBOutlet weak var userText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
@@ -87,5 +89,10 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate  {
         
         
 }
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+        self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
+    }
 
 }
