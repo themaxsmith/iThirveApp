@@ -11,42 +11,54 @@ import UIKit
 import Cosmos
 class EndOfCycleViewConrtoller: UIViewController {
    override func viewDidLayoutSubviews() {
-        var width = self.view.frame.width
+    
+    }
+    
+    func create(){
+        
         var size = 0
         var text:[String] = []
         for x in Global.global.types{
             if (x.goal1 != ""){
                 size = size + 1
                 text.append(x.goal1)
+                print("add 1 "+x.name)
             }
             if (x.goal2 != ""){
                 size = size + 1
                 text.append(x.goal2)
+                print("add 2"+x.name)
             }
             if (x.goal3 != ""){
                 size = size + 1
                 text.append(x.goal3)
+                print("add 3"+x.name)
             }
         }
         if size == 0 {
             
         }else{
-         
             
-          scroll.scrollRectToVisible(CGRect(x: 0, y: 0, width: scroll.frame.width, height: CGFloat(size * 25)), animated: true)
+            var width = scroll.frame.width
+            //var width = self.view.frame.width
+            scroll.scrollRectToVisible(CGRect(x: 0, y: 0, width: scroll.frame.width, height: CGFloat(size * 25) + 50), animated: true)
             for x in 0...size-1 {
-                let label = UILabel(frame: CGRect(x: 0, y: x * 50, width: Int(width-180), height: 25))
+                print(text[x] + " out")
+                let label = UILabel(frame: CGRect(x: 10, y: (x * 50) + 10, width: Int(width-140), height: 25))
                 
                 label.textAlignment = .left
                 label.text = text[x]
+                label.textColor = UIColor.white
+                
                 scroll.addSubview(label)
-                var customView = CosmosView(frame: CGRect(x: Int(width-200), y: x * 50, width: 200, height: 25))
+                var customView = CosmosView(frame: CGRect(x: Int(width-120), y: (x * 50) + 10, width: 200, height: 25))
+                customView.rating = 0
                 stars.append(customView)
                 scroll.addSubview(customView)
                 
             }
             scroll.contentSize = scroll.frame.size //sets ScrollView content
-
+            
             
         }
     }
@@ -66,26 +78,26 @@ class EndOfCycleViewConrtoller: UIViewController {
             
         }
         if rating[5] > 0 {
-            Global.global.assessOutput = "You have \(rating[5]), 5 star(s) rating(s), excellent Job!"
+            Global.global.assessOutput += "You have \(rating[5])\n"
         }else if rating[4] > 0 {
-            Global.global.assessOutput = "You have \(rating[4]), 4 star(s) rating(s), great work!"
+            Global.global.assessOutput += "You have \(rating[4])\n"
         }else if rating[3] > 0 {
-            Global.global.assessOutput = "You have \(rating[3]) 3 stars, youre doing good, what can you do to get more 4s?"
+            Global.global.assessOutput += "You have \(rating[3])\n"
         }
         else if rating[2] > 0 {
-            Global.global.assessOutput = "You have \(rating[2]), 2 star(s) rating(s), you're making progress, but try to compelte more goals next time."
+            Global.global.assessOutput += "You have \(rating[2])\n"
         }
         else if rating[1] > 0 {
-            Global.global.assessOutput = "You have \(rating[1]), 1 star rating(s), try to complete more goals. It's about progress not perfection!"
+            Global.global.assessOutput += "You have \(rating[1])\n"
         }
         else if rating[0] > 0 {
-            Global.global.assessOutput = "You have \(rating[0]), 0 star rating(s), try to complete more next time!"
+            Global.global.assessOutput += "You have \(rating[0])\n"
         }
         else{
             
         }
         print("output")
-         UserDefaults.standard.set(Global.global.endDate?.timeIntervalSince1970.rounded(), forKey: "dateG")
+        UserDefaults.standard.set(Global.global.endDate.timeIntervalSince1970.rounded(), forKey: "dateG")
         UserDefaults.standard.removeObject(forKey: "dateG")
         UserDefaults.standard.removeObject(forKey: "savedGoals")
         Global.global.reset = true
@@ -94,6 +106,7 @@ class EndOfCycleViewConrtoller: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
            self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
+        create()
     }
     
 }

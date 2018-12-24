@@ -17,12 +17,12 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
     
     func dateTimePicker(_ picker: DateTimePicker, didSelectDate: Date) {
         print(didSelectDate)
-        Global.global.endDate = Calendar.current.date(byAdding: .day, value: 31, to: didSelectDate)
+        Global.global.endDate = Calendar.current.date(byAdding: .day, value: 31, to: didSelectDate)!
     }
     override func viewWillAppear(_ animated: Bool) {
         
-        
-        self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
+       
+    
     
     }
     @IBOutlet weak var tipGoalMaking: UIButton!
@@ -47,12 +47,9 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
     
     @IBOutlet weak var StartGoalsBtn: UIButton!
     func enterGoals(){
-        let alertController = UIAlertController(title: "No Goals", message: "Please enter goals before starting!", preferredStyle: .alert)
-
-        let OKAction2 = UIAlertAction(title: "Ok", style: .default, handler: nil)
-      
-        alertController.addAction(OKAction2)
-        self.present(alertController, animated: true, completion: nil)
+        Global.global.selectedType = Global.global.types[0]
+        Global.global.current = 0
+        performSegue(withIdentifier: "set", sender: self)
     }
     @IBAction func startDateBtnClicked(_ sender: Any) {
         
@@ -77,7 +74,7 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
         }else{
         
         if Global.global.canEdit {
-         UserDefaults.standard.set(Global.global.endDate?.timeIntervalSince1970.rounded(), forKey: "dateG")
+            UserDefaults.standard.set(Global.global.endDate.timeIntervalSince1970.rounded(), forKey: "dateG")
          Global.global.canEdit = false
             
             Global.global.canEdit = false
@@ -91,10 +88,10 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
             tipGoalMaking.isHidden = true
             StartGoalsBtn.setTitle("Finish Session Goals", for: .normal)
             Global.global.canEdit = false
-            var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate!).day
+            var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate).day
            
-            if (x! > 30){
-                 textTitle.text =  "\(x!-30) before goals start"
+            if (x! > 31){
+                 textTitle.text =  "\(x!-31) day(s) before goals start"
             }else {
                  textTitle.text =  "\(x!) Days to Go!"
             }
@@ -128,27 +125,28 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         print("Test")
         saveGoals()
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.barTintColor = UIColor.clear
-        self.navigationController?.navigationBar.backgroundColor = UIColor.clear
-        self.view.layoutIfNeeded()
+      //  self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+      //  self.navigationController?.navigationBar.shadowImage = UIImage()
+     //   self.navigationController?.navigationBar.isTranslucent = true
+     //   self.navigationController?.navigationBar.barTintColor = UIColor.clear
+     //   self.navigationController?.navigationBar.backgroundColor = UIColor.clear
+     //   self.view.layoutIfNeeded()
        
         if ( Global.global.reset){
              Global.global.reset = false
             unlockGoals()
             
         }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.barTintColor = UIColor.clear
-        self.navigationController?.navigationBar.backgroundColor = UIColor.clear
-        self.navigationController?.navigationBar.shadowImage = nil
-        self.navigationController?.navigationBar.isTranslucent = true
+        // self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        //self.navigationController?.navigationBar.barTintColor = UIColor.clear
+        //self.navigationController?.navigationBar.backgroundColor = UIColor.clear
+       // self.navigationController?.navigationBar.shadowImage = nil
+      //  self.navigationController?.navigationBar.isTranslucent = true
     }
     
      func saveGoals(){
@@ -195,7 +193,7 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
         
     }
     func sendToServer(){
-        Alamofire.request(("https://api-upload.mygametape.com/apps/ithrive/send.php?key=\(Global.global.appKey  ?? "")&data=\(getGoalString() ?? "")&endDate=\(Global.global.endDate?.timeIntervalSince1970.rounded() ?? 0)").addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!).responseJSON { response in
+        Alamofire.request(("https://api-upload.mygametape.com/apps/ithrive/send.php?key=\(Global.global.appKey  ?? "")&data=\(getGoalString() ?? "")&endDate=\(Global.global.endDate.timeIntervalSince1970.rounded() ?? 0)").addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!).responseJSON { response in
             debugPrint(response)
             
             if let json = response.result.value {
@@ -249,7 +247,7 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
                                 self!.tipGoalMaking.isHidden = true
                                 self!.StartGoalsBtn.setTitle("Finish Session Goals", for: .normal)
                                 Global.global.canEdit = false
-                                var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate!).day
+                                var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate).day
                                 if (x! > 30){
                                     self!.textTitle.text =  "\(x!-30) before goals start"
                                 }else {
@@ -272,13 +270,14 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
         //for the walkthrough
        
         
-      //  gradient()
+     // gradient()
         if (Global.global.isLoggingIn){
         swiftyOnboard = SwiftyOnboard(frame: view.frame, style: .light)
         view.addSubview(swiftyOnboard)
         swiftyOnboard.dataSource = self
         swiftyOnboard.delegate = self
         }
+        
         if let g = UserDefaults.standard.string(forKey: "dateG"){
              print(g)
             var date = Date(timeIntervalSince1970:TimeInterval(exactly: Int64(g)!)!)
@@ -293,9 +292,9 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
                 tipGoalMaking.isHidden = true
                 StartGoalsBtn.setTitle("Finish Session Goals", for: .normal)
                 Global.global.canEdit = false
-                    var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate!).day
-                if (x! > 30){
-                    textTitle.text =  "\(x!-30) before goals start"
+                var x = NSCalendar.current.dateComponents([Calendar.Component.day], from: Date(), to: Global.global.endDate).day
+                if (x! > 31){
+                    textTitle.text =  "\(x!-31) day(s) before goals start"
                 }else {
                     textTitle.text =  "\(x!) Days to Go!"
                 }
@@ -324,7 +323,7 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
     
     func notify(title:String,text: String, day: Double){
         let content = UNMutableNotificationContent()
-        content.title = "Your Goals!"
+        content.title = "Goal Progression"
         content.subtitle = title
         content.body = text
         content.badge = 1
@@ -341,8 +340,9 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
     }
     @IBAction func SpiritButton(_ sender: Any) {
         Global.global.selectedType = Global.global.types[0]
+        Global.global.current = 0
         performSegue(withIdentifier: "set", sender: self)
-        
+    
         
        
         
@@ -359,27 +359,32 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
     
     @IBAction func financialButton(_ sender: Any) {
         Global.global.selectedType = Global.global.types[1]
+        Global.global.current = 1
         performSegue(withIdentifier:"set", sender: self)
         
     }
     @IBAction func emotionalButton(_ sender: Any) {
         Global.global.selectedType = Global.global.types[2]
+               Global.global.current = 2
         performSegue(withIdentifier:"set", sender: self)
         
     }
     
     @IBAction func professionalButton(_ sender: Any) {
         Global.global.selectedType = Global.global.types[3]
+               Global.global.current = 3
         performSegue(withIdentifier:"set", sender: self)
     }
     
     @IBAction func relationshipButton(_ sender: Any) {
         Global.global.selectedType = Global.global.types[4]
+               Global.global.current = 4
         performSegue(withIdentifier:"set", sender: self)
     }
     
     @IBAction func physicalButton(_ sender: Any) {
         Global.global.selectedType = Global.global.types[5]
+               Global.global.current = 5
         performSegue(withIdentifier:"set", sender: self)
     }
    
@@ -388,16 +393,16 @@ class GoalViewController: UIViewController, DateTimePickerDelegate {
     
    
     let colors:[UIColor] = [#colorLiteral(red: 0.4392156863, green: 0.2078431373, blue: 0.4117647059, alpha: 1),#colorLiteral(red: 0.4392156863, green: 0.2078431373, blue: 0.4117647059, alpha: 1),#colorLiteral(red: 0.4392156863, green: 0.2078431373, blue: 0.4117647059, alpha: 1),#colorLiteral(red: 0.4392156863, green: 0.2078431373, blue: 0.4117647059, alpha: 1)]
-    var titleArray: [String] = ["Welcome to iThrive! A Coaching & Personal Development Company","You will set goals in different areas of your life for 31 days.","31 days after you set your start date, you self assess your goals.","Why 31? "]
-    var subTitleArray: [String] = ["Helping Individuals Thrive At Work & At Home"," Enter up to 3 goals for the 6 different categories.","When you have completed your self assessment, click Finish Goal Assessment to reset your goals and enter new goals.", "31 days is a realistic timeframe to set practical and attainable goals. Set your course for a thriving life 31 days at a time!"]
+    var titleArray: [String] = ["Welcome to ithrive31! A Coaching & Personal Development Company","You will set goals in different areas of your life for 31 days.","31 days after you set your start date, you self assess your goals.","Why 31? "]
+    var subTitleArray: [String] = ["Helping individuals thrive at work and at home"," Enter up to 3 goals for the 6 different life areas.","When you have completed your self assessment, click Finish Goal Assessment to reset your goals and enter new ones.", "31 days is a realistic timeframe to set practical and attainable goals. Set your course for a thriving life 31 days at a time!"]
     //array for images for the walkthrough
     var images: [String] = ["256","GoalSettingPageSS","endOfCycleSS","256"]
     var gradiant: CAGradientLayer = {
-        //Gradiant for the background view
-        let blue = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0).cgColor
-        let purple = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0).cgColor
+        //Gradiant for the background view 112, 53, 105
+        let white = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.25).cgColor
+        let purple = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 0.5).cgColor
         let gradiant = CAGradientLayer()
-       // gradiant.colors = [purple, blue]
+       gradiant.colors = [purple, white]
         gradiant.startPoint = CGPoint(x: 0.5, y: 0.18)
         return gradiant
     }()
@@ -487,7 +492,7 @@ extension GoalViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
         print(Int(currentPage))
         overlay.continueButton.tag = Int(position)
     
-        if currentPage == 0.0 || currentPage == 1.0 {
+        if currentPage == 0.0 || currentPage == 1.0 || currentPage == 2.0 || currentPage == 3.0 {
             overlay.continueButton.setTitle("Continue", for: .normal)
             overlay.skipButton.setTitle("Skip", for: .normal)
             overlay.skipButton.isHidden = false

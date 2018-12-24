@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
             let familyName = user.profile.familyName
             let email = user.profile.email
             // ...
+            Global.global.email = email ?? ""
+            Global.global.password = idToken ?? ""
         }
     }
     var window: UIWindow?

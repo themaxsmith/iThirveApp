@@ -23,7 +23,8 @@ class ViewController: UIViewController {
             print("test")
             performSegue(withIdentifier: "home", sender: self)
            
-                
+            self.navigationController?.navigationBar.backgroundColor = self.view.backgroundColor!
+            self.navigationController?.navigationBar.barTintColor = self.view.backgroundColor!
                // self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
             
             

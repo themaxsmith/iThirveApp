@@ -19,7 +19,37 @@ class SetGoalViewController: UIViewController{
     @IBOutlet weak var navHeader: UINavigationItem!
     
     override func viewWillAppear(_ animated: Bool) {
-           self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
+       setup()
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        Global.global.selectedType?.goal1 = goal1Text.text ?? (Global.global.selectedType?.goal1)!
+        Global.global.selectedType?.goal2 = goal2Text.text ?? (Global.global.selectedType?.goal2)!
+        Global.global.selectedType?.goal3 = goal3Text.text ?? (Global.global.selectedType?.goal3)!
+        
+        self.navigationController?.navigationBar.backgroundColor = self.view.backgroundColor!
+        self.navigationController?.navigationBar.barTintColor = self.view.backgroundColor!
+      
+    }
+    
+    @IBAction func continueButton(_ sender: Any) {
+        if (Global.global.current < 5){
+              Global.global.selectedType = Global.global.types[Global.global.current + 1]
+        Global.global.current += 1
+             setup()
+        }else{
+            self.navigationController?.popViewController(animated: true)
+        }
+
+    }
+    @IBOutlet weak var typeOfGoalLabel: UILabel!
+    
+    @IBAction func assessGoalButton(_ sender: Any) {
+      
+
+    }
+    func setup(){
+        self.view.backgroundColor = UIColor(red: 112/255, green: 53/255, blue: 105/255, alpha: 1.00)
         navHeader.title = Global.global.selectedType?.name
         //typeOfGoalLabel.text = Global.global.selectedType?.name
         goal1Text.text = Global.global.selectedType?.goal1
@@ -40,8 +70,8 @@ class SetGoalViewController: UIViewController{
         self.navigationController?.navigationBar.barTintColor = Global.global.selectedType?.color
         let app = UINavigationBar.appearance()
         // nav bar color => your color
-    
-        app.barTintColor =  Global.global.selectedType?.color
+        
+        //app.barTintColor =  Global.global.selectedType?.color
         app.isTranslucent = false
         // status bar text => white
         app.barStyle = .black
@@ -49,21 +79,9 @@ class SetGoalViewController: UIViewController{
         // nav bar elements color => white
         app.tintColor = .white
         app.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-        
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        Global.global.selectedType?.goal1 = goal1Text.text ?? (Global.global.selectedType?.goal1)!
-        Global.global.selectedType?.goal2 = goal2Text.text ?? (Global.global.selectedType?.goal2)!
-        Global.global.selectedType?.goal3 = goal3Text.text ?? (Global.global.selectedType?.goal3)!
-        
-      
-    }
-    
-    @IBOutlet weak var typeOfGoalLabel: UILabel!
-    
-    @IBAction func assessGoalButton(_ sender: Any) {
-      
-
+        if (Global.global.current == 5){
+         
+        }
     }
 }
 
