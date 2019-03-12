@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D0AB8218A46FD00C0A197 /* LoginViewController.swift */; };
+		285BA35B21C994E8003325D6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA35A21C994E8003325D6 /* GradientView.swift */; };
+		285BA35D21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA35C21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift */; };
+		285BA35F21CC42E3003325D6 /* HowToAssessGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA35E21CC42E3003325D6 /* HowToAssessGoalsViewController.swift */; };
+		285BA36121CC4374003325D6 /* TotalStarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA36021CC4374003325D6 /* TotalStarViewController.swift */; };
+		285BA36321CD86CE003325D6 /* GroupStarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA36221CD86CE003325D6 /* GroupStarViewController.swift */; };
+		28A0B0752194DF4F00C55875 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0B0742194DF4F00C55875 /* GoalViewController.swift */; };
+		28A0B0772194E2BC00C55875 /* SetGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */; };
+		28A0B0AB219A185300C55875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A0B0AA219A185300C55875 /* Main.storyboard */; };
+		28C3B336218A3BC400081C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B335218A3BC400081C16 /* AppDelegate.swift */; };
+		28C3B338218A3BC400081C16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B337218A3BC400081C16 /* ViewController.swift */; };
+		28C3B33D218A3BC600081C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B33C218A3BC600081C16 /* Assets.xcassets */; };
+		28C3B340218A3BC600081C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C3B33E218A3BC600081C16 /* LaunchScreen.storyboard */; };
+		28C3B34B218A3BC600081C16 /* iThirveAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B34A218A3BC600081C16 /* iThirveAppTests.swift */; };
+		28E33B5821B07FDB00DF657C /* NewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E33B5721B07FDB00DF657C /* NewGoalViewController.swift */; };
+		28E33B5A21B1DEAE00DF657C /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E33B5921B1DEAE00DF657C /* CreateAccountViewController.swift */; };
+		28E33B5E21C05AD200DF657C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E33B5D21C05AD200DF657C /* SettingsViewController.swift */; };
+		28E421AE219F6A3200CEE613 /* EndOfCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E421AD219F6A3200CEE613 /* EndOfCycleViewController.swift */; };
+		3663BD2654EA81F6F4D56CC6 /* Pods_iThirveAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E2E2587C5789EF9E255F12 /* Pods_iThirveAppTests.framework */; };
+		73D8BAED219627C2002C4C9B /* typesOfGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8BAEC219627C2002C4C9B /* typesOfGoals.swift */; };
+		73D8BAEF219628B7002C4C9B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8BAEE219628B7002C4C9B /* Global.swift */; };
+		7951BE994467CFDC90EB82F7 /* Pods_iThirveApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7982E76077CB3E8196A57D4 /* Pods_iThirveApp.framework */; };
+		9D5F1A592208DA4A00FE7EA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F1A582208DA4A00FE7EA0 /* Main.storyboard */; };
+		9D5F1A5F2208E01C00FE7EA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F1A5D2208E01C00FE7EA0 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28C3B347218A3BC600081C16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28C3B32A218A3BC400081C16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28C3B331218A3BC400081C16;
+			remoteInfo = iThirveApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		280D0AB8218A46FD00C0A197 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		285BA35A21C994E8003325D6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		285BA35C21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsForGoalMakingViewController.swift; sourceTree = "<group>"; };
+		285BA35E21CC42E3003325D6 /* HowToAssessGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToAssessGoalsViewController.swift; sourceTree = "<group>"; };
+		285BA36021CC4374003325D6 /* TotalStarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStarViewController.swift; sourceTree = "<group>"; };
+		285BA36221CD86CE003325D6 /* GroupStarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStarViewController.swift; sourceTree = "<group>"; };
+		28A0B0742194DF4F00C55875 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalViewController.swift; sourceTree = "<group>"; };
+		28A0B0AA219A185300C55875 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		28C3B332218A3BC400081C16 /* iThirveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThirveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C3B335218A3BC400081C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28C3B337218A3BC400081C16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28C3B33C218A3BC600081C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28C3B33F218A3BC600081C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28C3B341218A3BC600081C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C3B346218A3BC600081C16 /* iThirveAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iThirveAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C3B34A218A3BC600081C16 /* iThirveAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iThirveAppTests.swift; sourceTree = "<group>"; };
+		28C3B34C218A3BC600081C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E33B5721B07FDB00DF657C /* NewGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalViewController.swift; sourceTree = "<group>"; };
+		28E33B5921B1DEAE00DF657C /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		28E33B5D21C05AD200DF657C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		28E421AD219F6A3200CEE613 /* EndOfCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfCycleViewController.swift; sourceTree = "<group>"; };
+		5F79D3D1FCE15E18773C9F2F /* Pods-iThirveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp.debug.xcconfig"; sourceTree = "<group>"; };
+		60F8380F3FB400BCB6468434 /* Pods-iThirveAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveAppTests/Pods-iThirveAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73D8BAEC219627C2002C4C9B /* typesOfGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typesOfGoals.swift; sourceTree = "<group>"; };
+		73D8BAEE219628B7002C4C9B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		9D5F1A582208DA4A00FE7EA0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9D5F1A5E2208E01C00FE7EA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B33BA4A3237B7CE642B2C16E /* Pods-iThirveAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveAppTests/Pods-iThirveAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7982E76077CB3E8196A57D4 /* Pods_iThirveApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iThirveApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2362B4682B5054DF9662211 /* Pods-iThirveApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iThirveApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp.release.xcconfig"; sourceTree = "<group>"; };
+		F6E2E2587C5789EF9E255F12 /* Pods_iThirveAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iThirveAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28C3B32F218A3BC400081C16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7951BE994467CFDC90EB82F7 /* Pods_iThirveApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C3B343218A3BC600081C16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3663BD2654EA81F6F4D56CC6 /* Pods_iThirveAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C3B329218A3BC400081C16 = {
+			isa = PBXGroup;
+			children = (
+				28C3B334218A3BC400081C16 /* iThirveApp */,
+				28C3B349218A3BC600081C16 /* iThirveAppTests */,
+				28C3B333218A3BC400081C16 /* Products */,
+				CD3C789B57FED27232E8030C /* Pods */,
+				DEC6F6B12C83F8923FC8270D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28C3B333218A3BC400081C16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28C3B332218A3BC400081C16 /* iThirveApp.app */,
+				28C3B346218A3BC600081C16 /* iThirveAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28C3B334218A3BC400081C16 /* iThirveApp */ = {
+			isa = PBXGroup;
+			children = (
+				28C3B335218A3BC400081C16 /* AppDelegate.swift */,
+				28C3B337218A3BC400081C16 /* ViewController.swift */,
+				28A0B0AA219A185300C55875 /* Main.storyboard */,
+				9D5F1A582208DA4A00FE7EA0 /* Main.storyboard */,
+				73D8BAEC219627C2002C4C9B /* typesOfGoals.swift */,
+				9D5F1A5D2208E01C00FE7EA0 /* LaunchScreen.storyboard */,
+				28C3B33C218A3BC600081C16 /* Assets.xcassets */,
+				28C3B33E218A3BC600081C16 /* LaunchScreen.storyboard */,
+				28C3B341218A3BC600081C16 /* Info.plist */,
+				280D0AB8218A46FD00C0A197 /* LoginViewController.swift */,
+				28E33B5921B1DEAE00DF657C /* CreateAccountViewController.swift */,
+				28A0B0742194DF4F00C55875 /* GoalViewController.swift */,
+				28A0B0762194E2BC00C55875 /* SetGoalViewController.swift */,
+				73D8BAEE219628B7002C4C9B /* Global.swift */,
+				28E421AD219F6A3200CEE613 /* EndOfCycleViewController.swift */,
+				28E33B5721B07FDB00DF657C /* NewGoalViewController.swift */,
+				28E33B5D21C05AD200DF657C /* SettingsViewController.swift */,
+				285BA35A21C994E8003325D6 /* GradientView.swift */,
+				285BA35C21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift */,
+				285BA35E21CC42E3003325D6 /* HowToAssessGoalsViewController.swift */,
+				285BA36021CC4374003325D6 /* TotalStarViewController.swift */,
+				285BA36221CD86CE003325D6 /* GroupStarViewController.swift */,
+			);
+			path = iThirveApp;
+			sourceTree = "<group>";
+		};
+		28C3B349218A3BC600081C16 /* iThirveAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				28C3B34A218A3BC600081C16 /* iThirveAppTests.swift */,
+				28C3B34C218A3BC600081C16 /* Info.plist */,
+			);
+			path = iThirveAppTests;
+			sourceTree = "<group>";
+		};
+		CD3C789B57FED27232E8030C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F79D3D1FCE15E18773C9F2F /* Pods-iThirveApp.debug.xcconfig */,
+				E2362B4682B5054DF9662211 /* Pods-iThirveApp.release.xcconfig */,
+				60F8380F3FB400BCB6468434 /* Pods-iThirveAppTests.debug.xcconfig */,
+				B33BA4A3237B7CE642B2C16E /* Pods-iThirveAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEC6F6B12C83F8923FC8270D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7982E76077CB3E8196A57D4 /* Pods_iThirveApp.framework */,
+				F6E2E2587C5789EF9E255F12 /* Pods_iThirveAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28C3B331218A3BC400081C16 /* iThirveApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C3B34F218A3BC600081C16 /* Build configuration list for PBXNativeTarget "iThirveApp" */;
+			buildPhases = (
+				2C6534FD79D01077292D9B40 /* [CP] Check Pods Manifest.lock */,
+				28C3B32E218A3BC400081C16 /* Sources */,
+				28C3B32F218A3BC400081C16 /* Frameworks */,
+				28C3B330218A3BC400081C16 /* Resources */,
+				8E49149F39E91094C05F799B /* [CP] Embed Pods Frameworks */,
+				4C18DE4DDFE5ECA2B0F94EB6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iThirveApp;
+			productName = iThirveApp;
+			productReference = 28C3B332218A3BC400081C16 /* iThirveApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28C3B345218A3BC600081C16 /* iThirveAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C3B352218A3BC600081C16 /* Build configuration list for PBXNativeTarget "iThirveAppTests" */;
+			buildPhases = (
+				F4D2777E85DECFE503C05486 /* [CP] Check Pods Manifest.lock */,
+				28C3B342218A3BC600081C16 /* Sources */,
+				28C3B343218A3BC600081C16 /* Frameworks */,
+				28C3B344218A3BC600081C16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28C3B348218A3BC600081C16 /* PBXTargetDependency */,
+			);
+			name = iThirveAppTests;
+			productName = iThirveAppTests;
+			productReference = 28C3B346218A3BC600081C16 /* iThirveAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28C3B32A218A3BC400081C16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "JJ SchraderBachar";
+				TargetAttributes = {
+					28C3B331218A3BC400081C16 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					28C3B345218A3BC600081C16 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 28C3B331218A3BC400081C16;
+					};
+				};
+			};
+			buildConfigurationList = 28C3B32D218A3BC400081C16 /* Build configuration list for PBXProject "iThirveApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28C3B329218A3BC400081C16;
+			productRefGroup = 28C3B333218A3BC400081C16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28C3B331218A3BC400081C16 /* iThirveApp */,
+				28C3B345218A3BC600081C16 /* iThirveAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28C3B330218A3BC400081C16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C3B340218A3BC600081C16 /* LaunchScreen.storyboard in Resources */,
+				28C3B33D218A3BC600081C16 /* Assets.xcassets in Resources */,
+				9D5F1A592208DA4A00FE7EA0 /* Main.storyboard in Resources */,
+				28A0B0AB219A185300C55875 /* Main.storyboard in Resources */,
+				9D5F1A5F2208E01C00FE7EA0 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C3B344218A3BC600081C16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C6534FD79D01077292D9B40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iThirveApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C18DE4DDFE5ECA2B0F94EB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E49149F39E91094C05F799B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTimePicker/DateTimePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyOnboard/SwiftyOnboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTimePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyOnboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iThirveApp/Pods-iThirveApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D2777E85DECFE503C05486 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iThirveAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C3B32E218A3BC400081C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E33B5A21B1DEAE00DF657C /* CreateAccountViewController.swift in Sources */,
+				28A0B0772194E2BC00C55875 /* SetGoalViewController.swift in Sources */,
+				285BA35B21C994E8003325D6 /* GradientView.swift in Sources */,
+				28E33B5E21C05AD200DF657C /* SettingsViewController.swift in Sources */,
+				280D0AB9218A46FD00C0A197 /* LoginViewController.swift in Sources */,
+				28A0B0752194DF4F00C55875 /* GoalViewController.swift in Sources */,
+				73D8BAED219627C2002C4C9B /* typesOfGoals.swift in Sources */,
+				28E421AE219F6A3200CEE613 /* EndOfCycleViewController.swift in Sources */,
+				28C3B338218A3BC400081C16 /* ViewController.swift in Sources */,
+				285BA35F21CC42E3003325D6 /* HowToAssessGoalsViewController.swift in Sources */,
+				28E33B5821B07FDB00DF657C /* NewGoalViewController.swift in Sources */,
+				28C3B336218A3BC400081C16 /* AppDelegate.swift in Sources */,
+				285BA35D21CBFAA3003325D6 /* TipsForGoalMakingViewController.swift in Sources */,
+				73D8BAEF219628B7002C4C9B /* Global.swift in Sources */,
+				285BA36321CD86CE003325D6 /* GroupStarViewController.swift in Sources */,
+				285BA36121CC4374003325D6 /* TotalStarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C3B342218A3BC600081C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C3B34B218A3BC600081C16 /* iThirveAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28C3B348218A3BC600081C16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28C3B331218A3BC400081C16 /* iThirveApp */;
+			targetProxy = 28C3B347218A3BC600081C16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28C3B33E218A3BC600081C16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C3B33F218A3BC600081C16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9D5F1A5D2208E01C00FE7EA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D5F1A5E2208E01C00FE7EA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28C3B34D218A3BC600081C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28C3B34E218A3BC600081C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28C3B350218A3BC600081C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F79D3D1FCE15E18773C9F2F /* Pods-iThirveApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNF5S54M34;
+				INFOPLIST_FILE = iThirveApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ithrive31.iosapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28C3B351218A3BC600081C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2362B4682B5054DF9662211 /* Pods-iThirveApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNF5S54M34;
+				INFOPLIST_FILE = iThirveApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ithrive31.iosapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28C3B353218A3BC600081C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F8380F3FB400BCB6468434 /* Pods-iThirveAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95RHN3PRT8;
+				INFOPLIST_FILE = iThirveAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schraderbachar.iThirveAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iThirveApp.app/iThirveApp";
+			};
+			name = Debug;
+		};
+		28C3B354218A3BC600081C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33BA4A3237B7CE642B2C16E /* Pods-iThirveAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95RHN3PRT8;
+				INFOPLIST_FILE = iThirveAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schraderbachar.iThirveAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iThirveApp.app/iThirveApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C3B32D218A3BC400081C16 /* Build configuration list for PBXProject "iThirveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C3B34D218A3BC600081C16 /* Debug */,
+				28C3B34E218A3BC600081C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C3B34F218A3BC600081C16 /* Build configuration list for PBXNativeTarget "iThirveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C3B350218A3BC600081C16 /* Debug */,
+				28C3B351218A3BC600081C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C3B352218A3BC600081C16 /* Build configuration list for PBXNativeTarget "iThirveAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C3B353218A3BC600081C16 /* Debug */,
+				28C3B354218A3BC600081C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28C3B32A218A3BC400081C16 /* Project object */;
+}
